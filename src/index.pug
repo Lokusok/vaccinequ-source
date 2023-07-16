@@ -1,0 +1,455 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title VaccineQu
+
+    link(rel="stylesheet" href="./css/style.min.css")
+    link(rel="icon" href="./images/favicon.ico")
+
+    script(defer src="./js/libs/micromodal.min.js")
+    script(defer src="./js/libs/choices.min.js")
+    script(defer src="./js/libs/autocomplete.min.js")
+    script(defer src="./js/libs/air-datepicker.js")
+    script(defer src="./js/libs/aos.min.js")
+    script(defer src="./js/main.js")
+  body
+    header#header.header(data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000")
+      .container
+        .header__row
+          a(href="./index.html").logo.header__logo
+            img(src="./images/logo.svg" alt="VaccineQu logo").header__logo-image
+
+          nav.nav.header__nav
+            .nav__line
+
+            .nav__outer
+              button(aria-label="Закрыть мобильное меню").nav__outer-close
+                img(src="./images/close.svg" alt="" aria-hidden="true")
+
+              .nav__inner
+                ul.nav__list
+                  li.nav__list-item
+                    a(href="#hero").nav__list-link.active
+                      span Home
+                  li.nav__list-item
+                    a(href="#schedule").nav__list-link 
+                      span Schedule
+                  li.nav__list-item
+                    a(href="#get-now").nav__list-link 
+                      span Quota
+                  li.nav__list-item
+                    a(href="#contacts").nav__list-link 
+                      span Information
+
+            button(data-micromodal-trigger="reg-modal").action-btn.nav__action-btn
+              span.action-btn__text Call Center
+
+            button.burger
+              span.burger__line.burger__line--1 
+              span.burger__line.burger__line--2
+              span.burger__line.burger__line--3
+              
+    section#hero.hero
+      .container
+        .hero__row
+          .hero__content
+            h1(data-aos="fade-right" data-aos-duration="450").hero__title Get Your Vaccine, Get Your Health
+            p(data-aos="fade-right" data-aos-delay="150" data-aos-duration="550").hero__descr.
+              There are many variations of passages of Lorem Ipsum available, 
+              but the majority have suffered alteration in some form, 
+              by injected humour
+            
+            .hero__content-buttons
+              button(
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-duration="350"
+                data-micromodal-trigger="reg-modal").trigger.action-btn.hero__button
+                span.action-btn__text Get Your Vaccine
+
+              button(
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="350"
+                data-micromodal-trigger="reg-modal").trigger.action-btn.outline.hero__button
+                span.action-btn__text Learn More
+
+          .hero-grid
+            .hero-grid__block.hero-grid__block--1(data-aos="zoom-in" data-aos-duration="650" data-aos-delay="600")
+              //- img(src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80" alt="Вакцина").hero-grid__image
+            .hero-grid__block.hero-grid__block--2(data-aos="zoom-in" data-aos-duration="650" data-aos-delay="650")
+            .hero-grid__block.hero-grid__block--3(data-aos="zoom-in" data-aos-duration="650" data-aos-delay="750")
+            .hero-grid__block.hero-grid__block--4(data-aos="zoom-in" data-aos-duration="650" data-aos-delay="850")
+            .hero-grid__block.hero-grid__block--5(data-aos="fade-left" data-aos-duration="500" data-aos-delay="1150")
+
+    section#preparations.preparations 
+      .container
+        .preparations__row
+          h2.visually-hidden Preparations
+
+          img(data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="400" src="./images/decor-1.svg" alt="" aria-hidden="true").decor-image.preparations__decor-image.preparations__decor-image--1
+          img(data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="400" src="./images/decor-1.svg" alt="" aria-hidden="true").decor-image.preparations__decor-image.preparations__decor-image--2
+
+          ul.preparations__list
+            li.preparation(data-aos="zoom-in")
+              .preparation__header
+                .orange-icon
+                  svg(width="14" height="14" aria-hidden="true")
+                    use(xlink:href="./images/sprite.svg#squares")
+
+                .preparation__info
+                  h3.preparation__title Sinovac
+                  span.preparation__descr Necessary making this
+
+              button(data-micromodal-trigger="reg-modal").action-btn.outline.preparation__btn
+                span.action-btn__text Get Vaccine
+            li.preparation(data-aos="zoom-in" data-aos-delay="50")
+              .preparation__header
+                .orange-icon
+                  svg(width="14" height="14" aria-hidden="true")
+                    use(xlink:href="./images/sprite.svg#squares")
+
+                .preparation__info
+                  h3.preparation__title Astrazeneca
+                  span.preparation__descr Necessary making this
+            li.preparation(data-aos="zoom-in" data-aos-delay="150")
+              .preparation__header
+                .orange-icon
+                  svg(width="14" height="14" aria-hidden="true")
+                    use(xlink:href="./images/sprite.svg#squares")
+
+                .preparation__info
+                  h3.preparation__title Sinopahrm
+                  span.preparation__descr Necessary making this
+
+    section#companies.companies 
+      .container.companies__container
+        .companies__row
+          h2.visually-hidden Companies
+
+          ul.companies__line
+            li.company(data-aos="zoom-in-up")
+              img(src="./images/company-1.svg" alt="Company 1").company__logo
+            li.company(data-aos="zoom-in-up" data-aos-delay="150")
+              img(src="./images/company-2.svg" alt="Company 2").company__logo
+            li.company(data-aos="zoom-in-up" data-aos-delay="250")
+              img(src="./images/company-3.svg" alt="Company 3").company__logo
+            li.company(data-aos="zoom-in-up" data-aos-delay="350")
+              img(src="./images/company-4.svg" alt="Company 4").company__logo
+
+    section#schedule.section-info.schedule
+      .container 
+        .schedule__row
+          h2.section-info__title.schedule__title(data-aos="fade-in" data-aos-duration="1050") Schedule Vaccination
+
+          .section-info__form-wrapper.schedule__form-wrapper
+            form.trigger-form.schedule-form
+              .schedule-form__row
+                .section-info__fieldset.schedule-form__fieldset(data-aos="fade-out")
+                  .schedule-form__fieldset-header
+                    .orange-icon.schedule-form__fieldset-icon
+                      svg(width="14" height="19" aria-hidden="true")
+                        use(xlink:href="./images/sprite.svg#marker")
+
+                    span.section-info__fieldset-title Location
+
+                  input(type="text" placeholder="Jakarta, Indonesia" required)#location.section-info__input.schedule-form__input
+
+                .section-info__fieldset.schedule-form__fieldset(data-aos="fade-out" data-aos-delay="150")
+                  .schedule-form__fieldset-header
+                    .orange-icon.schedule-form__fieldset-icon
+                      svg(width="18" height="20" aria-hidden="true")
+                        use(xlink:href="./images/sprite.svg#schedule")
+
+                    span.section-info__fieldset-title Date
+
+                  input(type="text" placeholder="25 June, 2021" required).date-input.section-info__input.schedule-form__input
+
+                .schedule-form__fieldset(data-aos="fade-out" data-aos-delay="250")
+                  .schedule-form__fieldset-header
+                    .orange-icon.schedule-form__fieldset-icon
+                      svg(width="14" height="14" aria-hidden="true")
+                        use(xlink:href="./images/sprite.svg#squares")
+
+                    span.section-info__fieldset-title Vaccine Type
+
+                  input(type="text" placeholder="Cinovac" required)#vaccine-type.section-info__input.schedule-form__input
+
+              button(data-safety-micromodal-trigger="reg-modal" type="submit" data-aos="fade-out" data-aos-delay="350").action-btn.schedule-form__submit
+                span.action-btn__text Find
+
+    section#info.section-info.info 
+      .container
+        .info__row
+          h2(data-aos="zoom-out").section-info__title.info__title Why Vaccine Is Important?
+          p(data-aos="zoom-out" data-aos-delay="300").section-info__descr.info__descr.
+            Combined with a handful of model sentence structures, to generate always free from repetition injected.
+
+          ul.info__line
+            li(data-aos="zoom-out" data-aos-delay="450").info-item
+              .orange-icon.info-item__icon
+                svg(width="20" height="20" aria-hidden="true")
+                  use(xlink:href="./images/sprite.svg#notice")
+              
+              h3.info-item__title Prevent covid 19 virus
+
+              p.info-item__descr Model sentence structures, to generate Lorem which looks reasonable
+
+            li(data-aos="zoom-out" data-aos-delay="550").info-item
+              .orange-icon.info-item__icon
+                svg(width="19" height="17" aria-hidden="true")
+                  use(xlink:href="./images/sprite.svg#wave")
+              
+              h3.info-item__title Protect others
+
+              p.info-item__descr Model sentence structures, to generate Lorem which looks reasonable
+
+            li(data-aos="zoom-out" data-aos-delay="650").info-item
+              .orange-icon.info-item__icon
+                svg(width="20" height="18" aria-hidden="true")
+                  use(xlink:href="./images/sprite.svg#error")
+              
+              h3.info-item__title Stop the spread of covid 19
+
+              p.info-item__descr Model sentence structures, to generate Lorem which looks reasonable
+
+            li(data-aos="zoom-out" data-aos-delay="750").info-item
+              .orange-icon.info-item__icon
+                svg(width="20" height="18" aria-hidden="true")
+                  use(xlink:href="./images/sprite.svg#people")
+              
+              h3.info-item__title Protect the next generation
+
+              p.info-item__descr Model sentence structures, to generate Lorem which looks reasonable
+
+    section#get-now.section-info.get-now 
+      .container
+        .get-now__row
+          h2(data-aos="fade-up").section-info__title.get-now__title Get Vaccine Now
+          p(data-aos="fade-up" data-aos-delay="300").section-info__descr.get-now__descr.
+            Combined with a handful of model sentence structures, generate always free from repetition injected.
+
+          div(data-aos="fade-in" data-aos-duration="1500" data-delay="600").section-info__form-wrapper.get-now__form-wrapper
+            form.trigger-form.get-now-form
+              .get-now-form__wrapper
+                .section-info__fieldset.get-now-form__fieldset
+                  .get-now-form__fieldset-header
+                    span.section-info__fieldset-title Full Name
+
+                  input(type="text" placeholder="Enter Your name" required).section-info__input.get-now-form__input
+
+                .section-info__fieldset.get-now-form__fieldset
+                  .get-now-form__fieldset-header
+                    span.section-info__fieldset-title Email or phone number
+
+                  input(type="text" placeholder="Enter your email or number" required).section-info__input.get-now-form__input
+
+                .section-info__fieldset.get-now-form__fieldset
+                  .get-now-form__fieldset-header
+                    span.section-info__fieldset-title Address
+
+                  input(type="text" placeholder="Full your Address" required).section-info__input.get-now-form__input
+
+                .section-info__fieldset.get-now-form__fieldset
+                  .get-now-form__fieldset-header
+                    span.section-info__fieldset-title Disease history
+
+                  input(type="text" placeholder="Enter diese history" required).section-info__input.get-now-form__input
+
+                .section-info__fieldset.get-now-form__fieldset
+                  .get-now-form__fieldset-header
+                    span.section-info__fieldset-title Level Vaccination
+
+                  select(name="level-vaccination" required).section-info__input.get-now-form__input
+                    option(disabled selected value="") Choose Level
+                    option(value="1") First Level
+                    option(value="2") Second Level
+                    option(value="3") Third Level
+                    option(value="4") Fourth Level
+
+                .section-info__fieldset.get-now-form__fieldset
+                  .get-now-form__fieldset-header
+                    span.section-info__fieldset-title Near Vaccination Location
+
+                  input(type="text" placeholder="Indonesia" required)#near-location.section-info__input.get-now-form__input
+
+              button(data-safety-micromodal-trigger="reg-modal" type="submit").action-btn.get-now-form__submit
+                span.action-btn__text Vaccine Now
+
+    section#contacts.section-info.contacts
+      .container
+        .contacts__row
+          .contacts__map
+            iframe.map(src="https://yandex.ru/map-widget/v1/?um=constructor%3A5f64caee600d5ba32c8fcc775b0b2519b7976736ee4c3fc0489850cacd208d10&amp;source=constructor&lang=en")
+
+          .contacts__content
+            h2(data-aos="zoom-in-left").section-info__title.contacts__title Emergency Contact
+            p(data-aos="zoom-in-left" data-aos-delay="300").section-info__descr.contacts__descr.
+              Combined with a handful of model sentence structures, generate always free from repetition injected.
+
+            ul.contacts__list
+              li(data-aos="zoom-out" data-aos-delay="350").contacts-item
+                .contacts-item__row
+                  .contacts-item__header
+                    .orange-icon.contacts-item__header-icon
+                      svg(width="24" height="24" aria-hidden="true")
+                        use(xlink:href="./images/sprite.svg#phone")
+
+                    .contacts-item__info
+                      h3.contacts-item__title Call
+                      span.contacts-item__descr 0822 - xxx - xxx
+
+                  a(href="tel:0882").action-btn.contacts-item__action-btn
+                    span.action-btn__text Call now
+
+              li(data-aos="zoom-out" data-aos-delay="450").contacts-item
+                .contacts-item__row
+                  .contacts-item__header
+                    .orange-icon.contacts-item__header-icon
+                      svg(width="18" height="18" aria-hidden="true")
+                        use(xlink:href="./images/sprite.svg#chat")
+
+                    .contacts-item__info
+                      h3.contacts-item__title Chat
+                      span.contacts-item__descr Type fast chat
+
+                  button(data-micromodal-trigger="reg-modal").action-btn.contacts-item__action-btn
+                    span.action-btn__text Chat
+
+              li(data-aos="zoom-out" data-aos-delay="550").contacts-item
+                .contacts-item__row
+                  .contacts-item__header
+                    .orange-icon.contacts-item__header-icon
+                      svg(width="20" height="22" aria-hidden="true")
+                        use(xlink:href="./images/sprite.svg#map")
+
+                    .contacts-item__info
+                      h3.contacts-item__title Go to Near Location
+                      span.contacts-item__descr You can use emergency
+
+                  button(data-micromodal-trigger="reg-modal").action-btn.contacts-item__action-btn
+                    span.action-btn__text Video Call
+
+              li(data-aos="zoom-out" data-aos-delay="650").contacts-item
+                .contacts-item__row
+                  .contacts-item__header
+                    .orange-icon.contacts-item__header-icon
+                      svg(width="20" height="16" aria-hidden="true")
+                        use(xlink:href="./images/sprite.svg#email")
+
+                    .contacts-item__info
+                      h3.contacts-item__title Email
+                      span.contacts-item__descr If you want update
+
+                  a(href="mailto:test@gmail.com").action-btn.contacts-item__action-btn
+                    span.action-btn__text Send Email
+
+    footer#footer.footer
+      .container
+        .footer__row
+          .footer__content
+            img(data-aos="zoom-in-right" src="./images/logo.svg" alt="VaccineQu logo").footer__content-logo
+
+            p(data-aos="zoom-in-right" data-aos-delay="300").footer__content-text.
+              Combined with a handful of model sentence 
+              structures,  generate always free from repetition 
+              injected chunks as necessary.
+
+          nav.footer__nav
+            div(data-aos="zoom-in-up").footer__nav-block
+              span.footer__nav-title Menu
+
+              ul.footer__nav-list
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Home
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Schedule
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Quota
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Information
+
+            div(data-aos="zoom-in-down" data-aos-delay="300").footer__nav-block
+              span.footer__nav-title Vaccine Type
+
+              ul.footer__nav-list
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Cinovac
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Astarzon
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Astarzon
+
+            div(data-aos="zoom-in-up" data-aos-delay="600").footer__nav-block
+              span.footer__nav-title Emergency Contact
+
+              ul.footer__nav-list
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Whatsap
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Email
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Instagram
+                li.footer__nav-item
+                  a(href="#").footer__nav-link Telefon Kantor
+
+    #reg-modal.modal.section-info.reg-modal(aria-hidden="true")
+      .modal__row.reg-modal__row(data-micromodal-close tabindex="-1")
+        .modal__content.reg-modal__content(role="dialog" aria-modal="true" aria-labelledby="reg-modal__title")
+          button(data-micromodal-close aria-label="Закрыть модальное окно").reg-modal__close
+            img(src="./images/close.svg" alt="" aria-hidden="true")
+
+          .reg-modal__inner
+            .reg-modal__header
+              h3#reg-modal__title.reg-modal__title
+                span.reg-modal__title-text Login
+                img(src="./images/hello.svg" alt="" aria-hidden="true")
+
+              p.reg-modal__subtitle How do I get started now
+
+            form.reg-modal__form
+              .reg-modal__form-fields
+                fieldset.reg-modal__fieldset
+                  legend.reg-modal__fieldset-title Email
+                  input(type="email" placeholder="Input email" required).section-info__input.reg-modal__input
+
+                fieldset.reg-modal__fieldset
+                  legend.reg-modal__fieldset-title Password
+                  input(type="password" placeholder="Enter your password" required).section-info__input.reg-modal__input
+
+              .reg-modal__additional
+                a(href="#").reg-modal__forgot-password Forgot password?
+
+              button(type="submit").long.action-btn.reg-modal__form-submit
+                span.action-btn__text Login
+
+            .another-ways
+              .another-ways__header
+                span.another-ways__title
+                  span.another-ways__title-text or signin with
+
+              ul.another-ways__list
+                li.another-way
+                  a(href="#").another-way__link
+                    <svg class="another-way__logo" aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.95599 7.35598V10.807H13.748C13.302 13 11.435 14.26 8.95599 14.26C6.06854 14.2202 3.74865 11.8682 3.74865 8.98048C3.74865 6.09275 6.06854 3.74072 8.95599 3.70098C10.1562 3.69954 11.3195 4.11605 12.246 4.87898L14.846 2.27898C11.8636 -0.342952 7.508 -0.680185 4.15755 1.45142C0.807102 3.58303 -0.732985 7.67119 0.37824 11.4836C1.48947 15.296 4.98494 17.9164 8.95599 17.914C13.423 17.914 17.485 14.665 17.485 8.97998C17.4781 8.43262 17.411 7.88768 17.285 7.35498L8.95599 7.35598Z" fill="#B9C0C1"/>
+                    </svg>
+
+                    span.another-way__text Login With Google
+
+                li.another-way
+                  a(href="#").another-way__link
+                    <svg class="another-way__logo" aria-hidden="true" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.00201416 10.002C0.0031777 14.9214 3.58042 19.11 8.43901 19.881V12.892H5.90201V10.002H8.44201V7.80198C8.32847 6.75952 8.68454 5.72058 9.41365 4.96692C10.1428 4.21325 11.1694 3.823 12.215 3.90198C12.9656 3.9141 13.7142 3.98095 14.455 4.10198V6.56098H13.191C12.7559 6.50399 12.3184 6.64771 12.0018 6.95165C11.6852 7.25559 11.5238 7.68687 11.563 8.12398V10.002H14.334L13.891 12.893H11.563V19.881C16.8175 19.0506 20.5021 14.2518 19.9475 8.96106C19.3929 3.67035 14.7933 -0.260088 9.48084 0.0171617C4.16838 0.294411 0.00285864 4.68229 0.00201416 10.002Z" fill="#B9C0C1"/>
+                    </svg>
+
+                    span.another-way__text Login With Facebook
+
+              .another-ways__signup
+                span.another-ways__signup-text You haven’t account? #[a(href="#") Signup]
+
+
+

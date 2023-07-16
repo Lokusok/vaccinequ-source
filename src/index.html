@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaccineQu</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <script defer src="./js/libs/micromodal.min.js"></script>
+    <script defer src="./js/libs/choices.min.js"></script>
+    <script defer src="./js/libs/autocomplete.min.js"></script>
+    <script defer src="./js/libs/air-datepicker.js"></script>
+    <script defer src="./js/libs/aos.min.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="header" id="header" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">
+      <div class="container">
+        <div class="header__row"><a class="logo header__logo" href="./index.html"><img class="header__logo-image" src="./images/logo.svg" alt="VaccineQu logo"></a>
+          <nav class="nav header__nav">
+            <div class="nav__line"></div>
+            <div class="nav__outer">
+              <button class="nav__outer-close" aria-label="Закрыть мобильное меню"><img src="./images/close.svg" alt="" aria-hidden="true"></button>
+              <div class="nav__inner">
+                <ul class="nav__list">
+                  <li class="nav__list-item"><a class="nav__list-link active" href="#hero"><span>Home</span></a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#schedule"> <span>Schedule</span></a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#get-now"> <span>Quota</span></a></li>
+                  <li class="nav__list-item"><a class="nav__list-link" href="#contacts"> <span>Information</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <button class="action-btn nav__action-btn" data-micromodal-trigger="reg-modal"><span class="action-btn__text">Call Center</span></button>
+            <button class="burger"><span class="burger__line burger__line--1"> </span><span class="burger__line burger__line--2"></span><span class="burger__line burger__line--3"></span></button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__row">
+          <div class="hero__content">
+            <h1 class="hero__title" data-aos="fade-right" data-aos-duration="450">Get Your Vaccine, Get Your Health</h1>
+            <p class="hero__descr" data-aos="fade-right" data-aos-delay="150" data-aos-duration="550">
+              There are many variations of passages of Lorem Ipsum available, 
+              but the majority have suffered alteration in some form, 
+              by injected humour
+              
+            </p>
+            <div class="hero__content-buttons">
+              <button class="trigger action-btn hero__button" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="350" data-micromodal-trigger="reg-modal"><span class="action-btn__text">Get Your Vaccine</span></button>
+              <button class="trigger action-btn outline hero__button" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="350" data-micromodal-trigger="reg-modal"><span class="action-btn__text">Learn More</span></button>
+            </div>
+          </div>
+          <div class="hero-grid">
+            <div class="hero-grid__block hero-grid__block--1" data-aos="zoom-in" data-aos-duration="650" data-aos-delay="600"></div>
+            <div class="hero-grid__block hero-grid__block--2" data-aos="zoom-in" data-aos-duration="650" data-aos-delay="650"></div>
+            <div class="hero-grid__block hero-grid__block--3" data-aos="zoom-in" data-aos-duration="650" data-aos-delay="750"></div>
+            <div class="hero-grid__block hero-grid__block--4" data-aos="zoom-in" data-aos-duration="650" data-aos-delay="850"></div>
+            <div class="hero-grid__block hero-grid__block--5" data-aos="fade-left" data-aos-duration="500" data-aos-delay="1150"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="preparations" id="preparations"> 
+      <div class="container">
+        <div class="preparations__row">
+          <h2 class="visually-hidden">Preparations</h2><img class="decor-image preparations__decor-image preparations__decor-image--1" data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="400" src="./images/decor-1.svg" alt="" aria-hidden="true"><img class="decor-image preparations__decor-image preparations__decor-image--2" data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="400" src="./images/decor-1.svg" alt="" aria-hidden="true">
+          <ul class="preparations__list">
+            <li class="preparation" data-aos="zoom-in">
+              <div class="preparation__header">
+                <div class="orange-icon">
+                  <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#squares"></use>
+                  </svg>
+                </div>
+                <div class="preparation__info">
+                  <h3 class="preparation__title">Sinovac</h3><span class="preparation__descr">Necessary making this</span>
+                </div>
+              </div>
+              <button class="action-btn outline preparation__btn" data-micromodal-trigger="reg-modal"><span class="action-btn__text">Get Vaccine</span></button>
+            </li>
+            <li class="preparation" data-aos="zoom-in" data-aos-delay="50">
+              <div class="preparation__header">
+                <div class="orange-icon">
+                  <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#squares"></use>
+                  </svg>
+                </div>
+                <div class="preparation__info">
+                  <h3 class="preparation__title">Astrazeneca</h3><span class="preparation__descr">Necessary making this</span>
+                </div>
+              </div>
+            </li>
+            <li class="preparation" data-aos="zoom-in" data-aos-delay="150">
+              <div class="preparation__header">
+                <div class="orange-icon">
+                  <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="./images/sprite.svg#squares"></use>
+                  </svg>
+                </div>
+                <div class="preparation__info">
+                  <h3 class="preparation__title">Sinopahrm</h3><span class="preparation__descr">Necessary making this</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="companies" id="companies"> 
+      <div class="container companies__container">
+        <div class="companies__row">
+          <h2 class="visually-hidden">Companies</h2>
+          <ul class="companies__line">
+            <li class="company" data-aos="zoom-in-up"><img class="company__logo" src="./images/company-1.svg" alt="Company 1"></li>
+            <li class="company" data-aos="zoom-in-up" data-aos-delay="150"><img class="company__logo" src="./images/company-2.svg" alt="Company 2"></li>
+            <li class="company" data-aos="zoom-in-up" data-aos-delay="250"><img class="company__logo" src="./images/company-3.svg" alt="Company 3"></li>
+            <li class="company" data-aos="zoom-in-up" data-aos-delay="350"><img class="company__logo" src="./images/company-4.svg" alt="Company 4"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-info schedule" id="schedule">
+      <div class="container"> 
+        <div class="schedule__row">
+          <h2 class="section-info__title schedule__title" data-aos="fade-in" data-aos-duration="1050">Schedule Vaccination</h2>
+          <div class="section-info__form-wrapper schedule__form-wrapper">
+            <form class="trigger-form schedule-form">
+              <div class="schedule-form__row">
+                <div class="section-info__fieldset schedule-form__fieldset" data-aos="fade-out">
+                  <div class="schedule-form__fieldset-header">
+                    <div class="orange-icon schedule-form__fieldset-icon">
+                      <svg width="14" height="19" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#marker"></use>
+                      </svg>
+                    </div><span class="section-info__fieldset-title">Location</span>
+                  </div>
+                  <input class="section-info__input schedule-form__input" type="text" placeholder="Jakarta, Indonesia" required id="location">
+                </div>
+                <div class="section-info__fieldset schedule-form__fieldset" data-aos="fade-out" data-aos-delay="150">
+                  <div class="schedule-form__fieldset-header">
+                    <div class="orange-icon schedule-form__fieldset-icon">
+                      <svg width="18" height="20" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#schedule"></use>
+                      </svg>
+                    </div><span class="section-info__fieldset-title">Date</span>
+                  </div>
+                  <input class="date-input section-info__input schedule-form__input" type="text" placeholder="25 June, 2021" required>
+                </div>
+                <div class="schedule-form__fieldset" data-aos="fade-out" data-aos-delay="250">
+                  <div class="schedule-form__fieldset-header">
+                    <div class="orange-icon schedule-form__fieldset-icon">
+                      <svg width="14" height="14" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#squares"></use>
+                      </svg>
+                    </div><span class="section-info__fieldset-title">Vaccine Type</span>
+                  </div>
+                  <input class="section-info__input schedule-form__input" type="text" placeholder="Cinovac" required id="vaccine-type">
+                </div>
+              </div>
+              <button class="action-btn schedule-form__submit" data-safety-micromodal-trigger="reg-modal" type="submit" data-aos="fade-out" data-aos-delay="350"><span class="action-btn__text">Find</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-info info" id="info"> 
+      <div class="container">
+        <div class="info__row">
+          <h2 class="section-info__title info__title" data-aos="zoom-out">Why Vaccine Is Important?</h2>
+          <p class="section-info__descr info__descr" data-aos="zoom-out" data-aos-delay="300">
+            Combined with a handful of model sentence structures, to generate always free from repetition injected.
+            
+          </p>
+          <ul class="info__line">
+            <li class="info-item" data-aos="zoom-out" data-aos-delay="450">
+              <div class="orange-icon info-item__icon">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="./images/sprite.svg#notice"></use>
+                </svg>
+              </div>
+              <h3 class="info-item__title">Prevent covid 19 virus</h3>
+              <p class="info-item__descr">Model sentence structures, to generate Lorem which looks reasonable</p>
+            </li>
+            <li class="info-item" data-aos="zoom-out" data-aos-delay="550">
+              <div class="orange-icon info-item__icon">
+                <svg width="19" height="17" aria-hidden="true">
+                  <use xlink:href="./images/sprite.svg#wave"></use>
+                </svg>
+              </div>
+              <h3 class="info-item__title">Protect others</h3>
+              <p class="info-item__descr">Model sentence structures, to generate Lorem which looks reasonable</p>
+            </li>
+            <li class="info-item" data-aos="zoom-out" data-aos-delay="650">
+              <div class="orange-icon info-item__icon">
+                <svg width="20" height="18" aria-hidden="true">
+                  <use xlink:href="./images/sprite.svg#error"></use>
+                </svg>
+              </div>
+              <h3 class="info-item__title">Stop the spread of covid 19</h3>
+              <p class="info-item__descr">Model sentence structures, to generate Lorem which looks reasonable</p>
+            </li>
+            <li class="info-item" data-aos="zoom-out" data-aos-delay="750">
+              <div class="orange-icon info-item__icon">
+                <svg width="20" height="18" aria-hidden="true">
+                  <use xlink:href="./images/sprite.svg#people"></use>
+                </svg>
+              </div>
+              <h3 class="info-item__title">Protect the next generation</h3>
+              <p class="info-item__descr">Model sentence structures, to generate Lorem which looks reasonable</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-info get-now" id="get-now"> 
+      <div class="container">
+        <div class="get-now__row">
+          <h2 class="section-info__title get-now__title" data-aos="fade-up">Get Vaccine Now</h2>
+          <p class="section-info__descr get-now__descr" data-aos="fade-up" data-aos-delay="300">
+            Combined with a handful of model sentence structures, generate always free from repetition injected.
+            
+          </p>
+          <div class="section-info__form-wrapper get-now__form-wrapper" data-aos="fade-in" data-aos-duration="1500" data-delay="600">
+            <form class="trigger-form get-now-form">
+              <div class="get-now-form__wrapper">
+                <div class="section-info__fieldset get-now-form__fieldset">
+                  <div class="get-now-form__fieldset-header"><span class="section-info__fieldset-title">Full Name</span></div>
+                  <input class="section-info__input get-now-form__input" type="text" placeholder="Enter Your name" required>
+                </div>
+                <div class="section-info__fieldset get-now-form__fieldset">
+                  <div class="get-now-form__fieldset-header"><span class="section-info__fieldset-title">Email or phone number</span></div>
+                  <input class="section-info__input get-now-form__input" type="text" placeholder="Enter your email or number" required>
+                </div>
+                <div class="section-info__fieldset get-now-form__fieldset">
+                  <div class="get-now-form__fieldset-header"><span class="section-info__fieldset-title">Address</span></div>
+                  <input class="section-info__input get-now-form__input" type="text" placeholder="Full your Address" required>
+                </div>
+                <div class="section-info__fieldset get-now-form__fieldset">
+                  <div class="get-now-form__fieldset-header"><span class="section-info__fieldset-title">Disease history</span></div>
+                  <input class="section-info__input get-now-form__input" type="text" placeholder="Enter diese history" required>
+                </div>
+                <div class="section-info__fieldset get-now-form__fieldset">
+                  <div class="get-now-form__fieldset-header"><span class="section-info__fieldset-title">Level Vaccination</span></div>
+                  <select class="section-info__input get-now-form__input" name="level-vaccination" required>
+                    <option disabled selected value="">Choose Level</option>
+                    <option value="1">First Level</option>
+                    <option value="2">Second Level</option>
+                    <option value="3">Third Level</option>
+                    <option value="4">Fourth Level</option>
+                  </select>
+                </div>
+                <div class="section-info__fieldset get-now-form__fieldset">
+                  <div class="get-now-form__fieldset-header"><span class="section-info__fieldset-title">Near Vaccination Location</span></div>
+                  <input class="section-info__input get-now-form__input" type="text" placeholder="Indonesia" required id="near-location">
+                </div>
+              </div>
+              <button class="action-btn get-now-form__submit" data-safety-micromodal-trigger="reg-modal" type="submit"><span class="action-btn__text">Vaccine Now</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-info contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__row">
+          <div class="contacts__map">
+            <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5f64caee600d5ba32c8fcc775b0b2519b7976736ee4c3fc0489850cacd208d10&amp;amp;source=constructor&amp;lang=en"></iframe>
+          </div>
+          <div class="contacts__content">
+            <h2 class="section-info__title contacts__title" data-aos="zoom-in-left">Emergency Contact</h2>
+            <p class="section-info__descr contacts__descr" data-aos="zoom-in-left" data-aos-delay="300">
+              Combined with a handful of model sentence structures, generate always free from repetition injected.
+              
+            </p>
+            <ul class="contacts__list">
+              <li class="contacts-item" data-aos="zoom-out" data-aos-delay="350">
+                <div class="contacts-item__row">
+                  <div class="contacts-item__header">
+                    <div class="orange-icon contacts-item__header-icon">
+                      <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#phone"></use>
+                      </svg>
+                    </div>
+                    <div class="contacts-item__info">
+                      <h3 class="contacts-item__title">Call</h3><span class="contacts-item__descr">0822 - xxx - xxx</span>
+                    </div>
+                  </div><a class="action-btn contacts-item__action-btn" href="tel:0882"><span class="action-btn__text">Call now</span></a>
+                </div>
+              </li>
+              <li class="contacts-item" data-aos="zoom-out" data-aos-delay="450">
+                <div class="contacts-item__row">
+                  <div class="contacts-item__header">
+                    <div class="orange-icon contacts-item__header-icon">
+                      <svg width="18" height="18" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#chat"></use>
+                      </svg>
+                    </div>
+                    <div class="contacts-item__info">
+                      <h3 class="contacts-item__title">Chat</h3><span class="contacts-item__descr">Type fast chat</span>
+                    </div>
+                  </div>
+                  <button class="action-btn contacts-item__action-btn" data-micromodal-trigger="reg-modal"><span class="action-btn__text">Chat</span></button>
+                </div>
+              </li>
+              <li class="contacts-item" data-aos="zoom-out" data-aos-delay="550">
+                <div class="contacts-item__row">
+                  <div class="contacts-item__header">
+                    <div class="orange-icon contacts-item__header-icon">
+                      <svg width="20" height="22" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#map"></use>
+                      </svg>
+                    </div>
+                    <div class="contacts-item__info">
+                      <h3 class="contacts-item__title">Go to Near Location</h3><span class="contacts-item__descr">You can use emergency</span>
+                    </div>
+                  </div>
+                  <button class="action-btn contacts-item__action-btn" data-micromodal-trigger="reg-modal"><span class="action-btn__text">Video Call</span></button>
+                </div>
+              </li>
+              <li class="contacts-item" data-aos="zoom-out" data-aos-delay="650">
+                <div class="contacts-item__row">
+                  <div class="contacts-item__header">
+                    <div class="orange-icon contacts-item__header-icon">
+                      <svg width="20" height="16" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#email"></use>
+                      </svg>
+                    </div>
+                    <div class="contacts-item__info">
+                      <h3 class="contacts-item__title">Email</h3><span class="contacts-item__descr">If you want update</span>
+                    </div>
+                  </div><a class="action-btn contacts-item__action-btn" href="mailto:test@gmail.com"><span class="action-btn__text">Send Email</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__content"><img class="footer__content-logo" data-aos="zoom-in-right" src="./images/logo.svg" alt="VaccineQu logo">
+            <p class="footer__content-text" data-aos="zoom-in-right" data-aos-delay="300">
+              Combined with a handful of model sentence 
+              structures,  generate always free from repetition 
+              injected chunks as necessary.
+              
+            </p>
+          </div>
+          <nav class="footer__nav">
+            <div class="footer__nav-block" data-aos="zoom-in-up"><span class="footer__nav-title">Menu</span>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Home</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Schedule</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Quota</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Information</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-block" data-aos="zoom-in-down" data-aos-delay="300"><span class="footer__nav-title">Vaccine Type</span>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Cinovac</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Astarzon</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Astarzon</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-block" data-aos="zoom-in-up" data-aos-delay="600"><span class="footer__nav-title">Emergency Contact</span>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Whatsap</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Email</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Instagram</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Telefon Kantor</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <div class="modal section-info reg-modal" id="reg-modal" aria-hidden="true">
+      <div class="modal__row reg-modal__row" data-micromodal-close tabindex="-1">
+        <div class="modal__content reg-modal__content" role="dialog" aria-modal="true" aria-labelledby="reg-modal__title">
+          <button class="reg-modal__close" data-micromodal-close aria-label="Закрыть модальное окно"><img src="./images/close.svg" alt="" aria-hidden="true"></button>
+          <div class="reg-modal__inner">
+            <div class="reg-modal__header">
+              <h3 class="reg-modal__title" id="reg-modal__title"><span class="reg-modal__title-text">Login</span><img src="./images/hello.svg" alt="" aria-hidden="true"></h3>
+              <p class="reg-modal__subtitle">How do I get started now</p>
+            </div>
+            <form class="reg-modal__form">
+              <div class="reg-modal__form-fields">
+                <fieldset class="reg-modal__fieldset">
+                  <legend class="reg-modal__fieldset-title">Email</legend>
+                  <input class="section-info__input reg-modal__input" type="email" placeholder="Input email" required>
+                </fieldset>
+                <fieldset class="reg-modal__fieldset">
+                  <legend class="reg-modal__fieldset-title">Password</legend>
+                  <input class="section-info__input reg-modal__input" type="password" placeholder="Enter your password" required>
+                </fieldset>
+              </div>
+              <div class="reg-modal__additional"><a class="reg-modal__forgot-password" href="#">Forgot password?</a></div>
+              <button class="long action-btn reg-modal__form-submit" type="submit"><span class="action-btn__text">Login</span></button>
+            </form>
+            <div class="another-ways">
+              <div class="another-ways__header"><span class="another-ways__title"><span class="another-ways__title-text">or signin with</span></span></div>
+              <ul class="another-ways__list">
+                <li class="another-way"><a class="another-way__link" href="#"><svg class="another-way__logo" aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.95599 7.35598V10.807H13.748C13.302 13 11.435 14.26 8.95599 14.26C6.06854 14.2202 3.74865 11.8682 3.74865 8.98048C3.74865 6.09275 6.06854 3.74072 8.95599 3.70098C10.1562 3.69954 11.3195 4.11605 12.246 4.87898L14.846 2.27898C11.8636 -0.342952 7.508 -0.680185 4.15755 1.45142C0.807102 3.58303 -0.732985 7.67119 0.37824 11.4836C1.48947 15.296 4.98494 17.9164 8.95599 17.914C13.423 17.914 17.485 14.665 17.485 8.97998C17.4781 8.43262 17.411 7.88768 17.285 7.35498L8.95599 7.35598Z" fill="#B9C0C1"/>
+</svg><span class="another-way__text">Login With Google</span></a></li>
+                <li class="another-way"><a class="another-way__link" href="#"><svg class="another-way__logo" aria-hidden="true" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.00201416 10.002C0.0031777 14.9214 3.58042 19.11 8.43901 19.881V12.892H5.90201V10.002H8.44201V7.80198C8.32847 6.75952 8.68454 5.72058 9.41365 4.96692C10.1428 4.21325 11.1694 3.823 12.215 3.90198C12.9656 3.9141 13.7142 3.98095 14.455 4.10198V6.56098H13.191C12.7559 6.50399 12.3184 6.64771 12.0018 6.95165C11.6852 7.25559 11.5238 7.68687 11.563 8.12398V10.002H14.334L13.891 12.893H11.563V19.881C16.8175 19.0506 20.5021 14.2518 19.9475 8.96106C19.3929 3.67035 14.7933 -0.260088 9.48084 0.0171617C4.16838 0.294411 0.00285864 4.68229 0.00201416 10.002Z" fill="#B9C0C1"/>
+</svg><span class="another-way__text">Login With Facebook</span></a></li>
+              </ul>
+              <div class="another-ways__signup"><span class="another-ways__signup-text">You haven’t account? <a href="#">Signup</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
